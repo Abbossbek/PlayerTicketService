@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/relative_profile"
+    android:background="@drawable/profile_back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/profile_nav_bar"
+            android:elevation="10dp"
+            android:outlineSpotShadowColor="#000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textviewUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Assalomu alaykum!\nMa'lumotlar yuklanmoqda..."
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/liner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        style="@style/AppTheme.FAB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        app:menu_animationDelayPerItem="55"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#00695C"
+        app:menu_colorPressed="#009688"
+        app:menu_colorRipple="#99d4d4d4"
+        app:menu_fab_label="Menyu"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_menu_black_24dp"
+        app:menu_labels_colorNormal="#ffffff"
+        app:menu_labels_colorPressed="#009688"
+        app:menu_labels_colorRipple="#000000"
+        app:menu_labels_cornerRadius="4dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_textColor="#000000"
+        app:menu_labels_textSize="15sp"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#66aff198"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="4dp"
+        app:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_black_24dp"
+            app:fab_label="Ulashish"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            app:fab_label="Ma'lumotlar"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_collections_bookmark_black_24dp"
+            app:fab_label="Reklamalarim"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_to_queue_black_24dp"
+            app:fab_label="Reklama berish"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            app:fab_label="Mablag' chiqarish"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_black_24dp"
+            app:fab_label="Sozlamalar"
+            app:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#ff00"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:fab_label="Profildan chiqish"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.Label
+        android:id="@+id/label_update"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_update_black_24dp"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

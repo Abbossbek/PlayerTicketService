@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Player ticket service</string>
+    <string name="service_running">Service is running</string>
+    <string name="text_value_radio_notification">Ticket service</string>
+    <string name="service_paused">Service is paused</string>
+</resources>
